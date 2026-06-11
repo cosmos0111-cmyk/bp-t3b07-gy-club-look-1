@@ -1,213 +1,794 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>영화 미학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가양 클럽 룩북 | RAW CONCRETE</title>
+    <meta name="description" content="가양 클럽 룩북 - 거리에서 가장 거친 스타일을 찾아라. 클럽 문화의 중심, 가양의 클럽은 규칙을 깨는 패션이 법칙이다. 전화: 010-6279-0862">
+    <meta name="keywords" content="가양 클럽, 가양 클럽 룩북, 가양 클럽 패션, 클럽 룩북, 가양 나이트, 가양 클럽 스타일, 거리 패션, 클럽 문화">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <link rel="canonical" href="https://t3b07-gy-club-look-1.vercel.app/">
+    <meta property="og:title" content="가양 클럽 룩북 | RAW CONCRETE">
+    <meta property="og:description" content="가양 클럽 룩북 - 거리에서 가장 거친 스타일을 찾아라. 클럽 문화의 중심, 가양의 클럽은 규칙을 깨는 패션이 법칙이다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b07-gy-club-look-1.vercel.app/">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%231a1a1a'/%3E%3Ctext x='50' y='300' font-family='Impact' font-size='80' fill='%23ff6b35'%3EGY%3C/text%3E%3Ctext x='50' y='400' font-family='monospace' font-size='40' fill='%23e5e5e5'%3ECLUB LOOKBOOK%3C/text%3E%3C/svg%3E">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="가양 클럽 룩북 | RAW CONCRETE">
+    <meta name="twitter:description" content="가양 클럽 룩북 - 거리에서 가장 거친 스타일을 찾아라.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "가양 클럽 룩북",
+        "description": "가양 클럽 룩북 - 거리에서 가장 거친 스타일을 찾아라. 클럽 문화의 중심, 가양의 클럽은 규칙을 깨는 패션이 법칙이다.",
+        "url": "https://t3b07-gy-club-look-1.vercel.app/",
+        "telephone": "010-6279-0862",
+        "areaServed": {
+            "@type": "City",
+            "name": "가양"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "클럽 룩북"
+        },
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "item": {"@type": "CreativeWork", "name": "가양 클럽 룩북 - 거리 패션"}},
+                {"@type": "ListItem", "position": 2, "item": {"@type": "CreativeWork", "name": "클럽 문화"}},
+                {"@type": "ListItem", "position": 3, "item": {"@type": "CreativeWork", "name": "가양 클럽 스타일"}}
+            ]
+        }
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #e5e5e5;
+            font-family: 'Impact', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            overflow-x: hidden;
+        }
+
+        /* RAW TEXTURE - CSS ONLY */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(45deg, transparent, transparent 4px, rgba(255, 107, 53, 0.03) 4px, rgba(255, 107, 53, 0.03) 8px);
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        img, svg {
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* HEADER */
+        header {
+            background: #1a1a1a;
+            border-bottom: 4px solid #ff6b35;
+            padding: 16px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transform: skewY(-0.5deg);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-transform: uppercase;
+            color: #ff6b35;
+            letter-spacing: -0.05em;
+            border: 4px solid #e5e5e5;
+            padding: 4px 12px;
+            display: inline-block;
+            transform: skewX(-5deg);
+        }
+
+        .logo span {
+            color: #e5e5e5;
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        nav a {
+            font-family: 'Courier New', monospace;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            color: #e5e5e5;
+            padding: 8px 16px;
+            border: 3px solid transparent;
+            transition: all 0.1s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            border-color: #ff6b35;
+            color: #ff6b35;
+            transform: rotate(-2deg);
+        }
+
+        .phone-link {
+            font-family: 'Courier New', monospace;
+            font-size: 1.3rem;
+            color: #ff6b35;
+            border: 3px solid #ff6b35;
+            padding: 8px 20px;
+            display: inline-block;
+            transform: skewX(3deg);
+        }
+
+        .phone-link:hover {
+            background: #ff6b35;
+            color: #1a1a1a;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 8px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 32px;
+            height: 4px;
+            background: #e5e5e5;
+        }
+
+        /* MOBILE NAV */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1a1a1a;
+            z-index: 200;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+            padding: 48px;
+            border: 6px solid #ff6b35;
+        }
+
+        .mobile-nav.active {
+            display: flex;
+        }
+
+        .mobile-nav a {
+            font-size: 2rem;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            color: #e5e5e5;
+            border: 4px solid transparent;
+            padding: 12px 32px;
+        }
+
+        .mobile-nav a:hover {
+            border-color: #ff6b35;
+        }
+
+        .mobile-nav .close-btn {
+            position: absolute;
+            top: 24px;
+            right: 48px;
+            font-size: 3rem;
+            color: #ff6b35;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* MAIN */
+        main {
+            padding: 0;
+        }
+
+        /* HERO */
+        .hero {
+            padding: 80px 48px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            background: #1a1a1a;
+            border-bottom: 4px solid #ff6b35;
+            position: relative;
+            min-height: 80vh;
+            align-items: center;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: #1a1a1a;
+            border-left: 4px solid #ff6b35;
+            border-right: 4px solid #ff6b35;
+            transform: skewY(-1deg);
+            z-index: 2;
+        }
+
+        .hero-text {
+            transform: skewX(-2deg);
+        }
+
+        .hero-text h1 {
+            font-size: 5rem;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-transform: uppercase;
+            color: #e5e5e5;
+            line-height: 0.9;
+            margin-bottom: 24px;
+            letter-spacing: -0.08em;
+            text-shadow: 6px 6px 0 #ff6b35;
+        }
+
+        .hero-text h1 span {
+            color: #ff6b35;
+            display: block;
+        }
+
+        .hero-text p {
+            font-family: 'Courier New', monospace;
+            font-size: 1.3rem;
+            color: #e5e5e5;
+            border-left: 4px solid #ff6b35;
+            padding-left: 16px;
+            margin-bottom: 32px;
+            max-width: 500px;
+        }
+
+        .hero-text .cta {
+            display: inline-block;
+            font-family: 'Impact', sans-serif;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: #1a1a1a;
+            background: #ff6b35;
+            padding: 12px 32px;
+            border: 4px solid #e5e5e5;
+            transform: rotate(-1deg);
+            transition: all 0.1s;
+        }
+
+        .hero-text .cta:hover {
+            transform: rotate(1deg) scale(1.05);
+            background: #e5e5e5;
+            color: #ff6b35;
+        }
+
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-visual .svg-block {
+            width: 100%;
+            max-width: 500px;
+            height: 400px;
+            background: repeating-linear-gradient(45deg, #2a2a2a, #2a2a2a 20px, #1a1a1a 20px, #1a1a1a 40px);
+            border: 4px solid #ff6b35;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: skewY(2deg) rotate(2deg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-visual .svg-block::before {
+            content: '🔥';
+            font-size: 6rem;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            opacity: 0.3;
+        }
+
+        .hero-visual .svg-block .inner-text {
+            font-size: 3.5rem;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            color: #ff6b35;
+            text-align: center;
+            line-height: 1;
+            text-shadow: 4px 4px 0 #e5e5e5;
+            letter-spacing: -0.05em;
+        }
+
+        .hero-visual .svg-block .inner-text small {
+            display: block;
+            font-size: 1.2rem;
+            color: #e5e5e5;
+            font-family: 'Courier New', monospace;
+            text-shadow: none;
+        }
+
+        /* SECTION */
+        section {
+            padding: 80px 48px;
+            border-bottom: 4px solid #ff6b35;
+        }
+
+        .section-title {
+            font-size: 3.5rem;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-transform: uppercase;
+            color: #e5e5e5;
+            margin-bottom: 48px;
+            transform: skewX(-3deg);
+            border-bottom: 4px solid #ff6b35;
+            padding-bottom: 16px;
+            display: inline-block;
+        }
+
+        .section-title span {
+            color: #ff6b35;
+        }
+
+        /* ABOUT / INTRO */
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+
+        .intro-block {
+            background: #2a2a2a;
+            border: 4px solid #e5e5e5;
+            padding: 32px;
+            transform: rotate(-0.5deg);
+        }
+
+        .intro-block:nth-child(2) {
+            transform: rotate(0.5deg);
+            border-color: #ff6b35;
+        }
+
+        .intro-block h3 {
+            font-size: 2rem;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            color: #ff6b35;
+            margin-bottom: 16px;
+        }
+
+        .intro-block p {
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #e5e5e5;
+        }
+
+        /* REVIEWS */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .review-card {
+            background: #2a2a2a;
+            border: 4px solid #e5e5e5;
+            padding: 24px;
+            transform: skewX(-1deg);
+            transition: all 0.1s;
+            position: relative;
+        }
+
+        .review-card:hover {
+            border-color: #ff6b35;
+            transform: skewX(1deg) translateY(-8px);
+        }
+
+        .review-card .stars {
+            color: #ff6b35;
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+            margin-bottom: 8px;
+        }
+
+        .review-card .nickname {
+            font-family: 'Impact', sans-serif;
+            font-size: 1.4rem;
+            color: #e5e5e5;
+            text-transform: uppercase;
+        }
+
+        .review-card .date {
+            font-family: 'Courier New', monospace;
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 12px;
+        }
+
+        .review-card .content {
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #ccc;
+            border-top: 2px solid #ff6b35;
+            padding-top: 12px;
+        }
+
+        .review-card::before {
+            content: '"';
+            font-size: 4rem;
+            color: #ff6b35;
+            position: absolute;
+            top: -10px;
+            right: 16px;
+            opacity: 0.3;
+        }
+
+        /* GALLERY (CSS only) */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .gallery-item {
+            aspect-ratio: 1 / 1.3;
+            background: #2a2a2a;
+            border: 4px solid #e5e5e5;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding: 16px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.1s;
+        }
+
+        .gallery-item:nth-child(1) {
+            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            border-color: #ff6b35;
+        }
+        .gallery-item:nth-child(2) {
+            background: repeating-linear-gradient(0deg, #2a2a2a, #2a2a2a 8px, #1a1a1a 8px, #1a1a1a 16px);
+            transform: rotate(1deg);
+        }
+        .gallery-item:nth-child(3) {
+            background: radial-gradient(circle at 30% 70%, #ff6b35 0%, #1a1a1a 70%);
+            border-color: #e5e5e5;
+        }
+        .gallery-item:nth-child(4) {
+            background: linear-gradient(45deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
+            transform: rotate(-1deg);
+        }
+        .gallery-item:nth-child(5) {
+            background: conic-gradient(from 90deg at 50% 50%, #ff6b35, #1a1a1a, #e5e5e5, #ff6b35);
+            border-color: #ff6b35;
+        }
+        .gallery-item:nth-child(6) {
+            background: linear-gradient(180deg, #1a1a1a 0%, #2a2a2a 100%);
+            border-color: #e5e5e5;
+        }
+
+        .gallery-item .g-label {
+            font-family: 'Impact', sans-serif;
+            font-size: 1.8rem;
+            color: #e5e5e5;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 0 #1a1a1a;
+            z-index: 2;
+            line-height: 1;
+        }
+
+        .gallery-item .g-label span {
+            color: #ff6b35;
+        }
+
+        .gallery-item .g-emoji {
+            font-size: 4rem;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            opacity: 0.5;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1a1a1a;
+            padding: 48px;
+            border-top: 4px solid #ff6b35;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            text-align: center;
+        }
+
+        footer .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+        }
+
+        footer .footer-links a {
+            border-bottom: 2px solid transparent;
+        }
+
+        footer .footer-links a:hover {
+            border-color: #ff6b35;
+            color: #ff6b35;
+        }
+
+        footer .copyright {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        footer .phone-footer {
+            font-size: 1.5rem;
+            font-family: 'Impact', sans-serif;
+            color: #ff6b35;
+            border: 3px solid #ff6b35;
+            padding: 8px 24px;
+            display: inline-block;
+            margin: 0 auto;
+            transform: skewX(-2deg);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            header {
+                padding: 16px 24px;
+            }
+            nav {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 64px 24px;
+                gap: 48px;
+                min-height: auto;
+            }
+
+            .hero-text h1 {
+                font-size: 3rem;
+                text-shadow: 4px 4px 0 #ff6b35;
+            }
+
+            .hero-text p {
+                font-size: 1rem;
+            }
+
+            .hero-visual .svg-block {
+                height: 250px;
+            }
+
+            .hero-visual .svg-block .inner-text {
+                font-size: 2.5rem;
+            }
+
+            section {
+                padding: 48px 24px;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+
+            .gallery-item .g-label {
+                font-size: 1.2rem;
+            }
+
+            footer {
+                padding: 32px 24px;
+            }
+
+            .mobile-nav a {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
     <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
+        <div class="logo">GY<span>클럽</span></div>
+        <nav>
+            <a href="#hero">룩북</a>
+            <a href="#about">에티켓</a>
+            <a href="#reviews">리뷰</a>
+            <a href="#gallery">갤러리</a>
+            <a href="tel:010-6279-0862" class="phone-link">☏ 010-6279-0862</a>
+        </nav>
+        <button class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('.mobile-nav').classList.add('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <button class="close-btn" aria-label="메뉴 닫기" onclick="this.parentElement.classList.remove('active')">✕</button>
+        <a href="#hero" onclick="document.querySelector('.mobile-nav').classList.remove('active')">룩북</a>
+        <a href="#about" onclick="document.querySelector('.mobile-nav').classList.remove('active')">에티켓</a>
+        <a href="#reviews" onclick="document.querySelector('.mobile-nav').classList.remove('active')">리뷰</a>
+        <a href="#gallery" onclick="document.querySelector('.mobile-nav').classList.remove('active')">갤러리</a>
+        <a href="tel:010-6279-0862" onclick="document.querySelector('.mobile-nav').classList.remove('active')">☏ 전화</a>
+    </div>
+
     <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>영화 미학 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>영화 미학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h3>
-          <p>세계적인 영화 거장 안드레이 타르코프스키 감독이 고집했던 롱테이크 샷 기법은 단순히 기술적인 길이를 넘어 관객의 물리적 시간 감각을 정지시키고 인위적인 미장센 속 조형적 침묵을 체...</p>
-        </a>
-      
+        <section class="hero" id="hero">
+            <div class="hero-text">
+                <h1>가양 클럽<br><span>룩북</span></h1>
+                <p>거리에서 가장 거친 스타일을 찾아라. 규칙을 깨는 패션이 법칙이다. 가양의 밤은 당신을 기다린다.</p>
+                <a href="tel:010-6279-0862" class="cta">☏ 지금 전화</a>
+            </div>
+            <div class="hero-visual">
+                <div class="svg-block">
+                    <div class="inner-text">
+                        RAW<br>CONCRETE
+                        <small>🔥 가양 클럽 🔥</small>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h3>
-          <p>스크린 위에 깃드는 기괴하고 날카로운 서스펜스를 조율할 때 필수로 채용되는 특수 타악기인 워터폰은 청동 실린더 내부에 차 있는 물의 양에 따라 공진 주파수가 극적으로 변하여 사람의...</p>
-        </a>
-      
+        <section id="about">
+            <h2 class="section-title">클럽 <span>에티켓</span></h2>
+            <div class="intro-grid">
+                <div class="intro-block">
+                    <h3>드레스 코드</h3>
+                    <p>여기는 정장 따위가 어울리는 곳이 아니다. 가죽, 데님, 스니커즈. 너의 가장 거친 옷을 입어라. 포멀은 집에 두고 와라. 룩북은 현장에서 만들어진다.</p>
+                </div>
+                <div class="intro-block">
+                    <h3>분위기</h3>
+                    <p>조명은 어둡고, 베이스는 울리고, 사람들은 미친 듯이 논다. 가양 클럽은 겉치레를 버리는 곳이다. 여기서 진짜 너를 보여줘라. 우리는 가짜를 용납하지 않는다.</p>
+                </div>
+            </div>
+        </section>
 
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h3>
-          <p>완벽주의적인 시네아스트 스탠리 큐브릭이 애용했던 화면 정중앙의 1점 투시 수렴 대칭 구도는 관객의 시선을 강제로 가두어 인공적인 폐쇄 공포와 거역할 수 없는 심리적 억압 효과를 자...</p>
-        </a>
-      
+        <section id="reviews">
+            <h2 class="section-title">리얼 <span>리뷰</span></h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <div class="nickname">서울의밤</div>
+                    <div class="date">2024-03-15</div>
 
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
       
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
       </div>
-    </footer>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-11">2026-06-11</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">가양 클럽 룩북 솔직 후기 — 3개월 써본 사람의 리얼 리뷰</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">아, 진짜... 글룸헤이븐 1판과 2판 사이에 변경된 클래스 카드들 중 가장 눈길을 사로잡는 건 바로 스탯 차이와 밸런스 변경 이유입니다. 특히 카드 번호가 7인 클래스들은 무척 귀중한 존재죠. ### 주제: 글룸헤이븐 1판과 2판 사이의 클래스 카드 스탯 차이와 밸런</p>
+      </div>
+      <a href="posts/review-002-c35f50.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
 </body>
 </html>

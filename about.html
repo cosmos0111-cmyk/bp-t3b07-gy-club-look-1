@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가양 클럽 룩북 | 정보</title>
+    <meta name="description" content="가양 클럽 룩북 - 거리에서 가장 거친 스타일을 찾아라. 클럽 문화의 중심, 가양의 클럽은 규칙을 깨는 패션이 법칙이다. 전화: 010-6279-0862">
+    <meta name="keywords" content="가양 클럽, 가양 클럽 룩북, 가양 클럽 패션, 클럽 룩북, 가양 나이트, 가양 클럽 스타일, 거리 패션, 클럽 문화, 가양 클럽 정보">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <link rel="canonical" href="https://t3b07-gy-club-look-1.vercel.app/info">
+    <meta property="og:title" content="가양 클럽 룩북 | 정보">
+    <meta property="og:description" content="가양 클럽 룩북 - 거리에서 가장 거친 스타일을 찾아라. 클럽 문화의 중심, 가양의 클럽은 규칙을 깨는 패션이 법칙이다.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px);
+            pointer-events: none;
+            z-index: 0;
+        }
+        img, svg {
+            max-width: 100%;
+            height: auto;
+        }
+        a {
+            color: #ff4444;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        a:hover {
+            color: #ff6666;
+            text-shadow: 0 0 8px rgba(255,68,68,0.5);
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(26,26,26,0.95);
+            border-bottom: 2px solid #ff4444;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #ff4444;
+        }
+        .logo span {
+            color: #e0e0e0;
+            font-weight: 300;
+        }
+        nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        nav a {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            color: #e0e0e0;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+        }
+        nav a:hover {
+            border-bottom-color: #ff4444;
+            color: #ff4444;
+        }
+        .phone-link {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #ff4444;
+            border: 1px solid #ff4444;
+            padding: 8px 16px;
+            transition: all 0.3s;
+        }
+        .phone-link:hover {
+            background: #ff4444;
+            color: #1a1a1a;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+        .hamburger span {
+            width: 30px;
+            height: 3px;
+            background: #ff4444;
+            transition: all 0.3s;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+            }
+            .logo {
+                font-size: 1.2rem;
+            }
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(26,26,26,0.98);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                border-bottom: 2px solid #ff4444;
+            }
+            nav.active {
+                display: flex;
+            }
+            nav a {
+                font-size: 1rem;
+                padding: 10px 0;
+                width: 100%;
+                text-align: center;
+            }
+            .phone-link {
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+        main {
+            padding: 120px 40px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .page-title {
+            font-size: 4rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            color: #ff4444;
+            margin-bottom: 10px;
+            line-height: 1;
+            text-shadow: 4px 4px 0 rgba(255,68,68,0.2);
+        }
+        .page-subtitle {
+            font-size: 1rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 60px;
+            border-left: 3px solid #ff4444;
+            padding-left: 15px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+        .info-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid #333;
+            padding: 30px;
+            transition: all 0.3s;
+        }
+        .info-card:hover {
+            border-color: #ff4444;
+            transform: translateY(-5px);
+        }
+        .info-card h3 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ff4444;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #333;
+        }
+        .info-card p {
+            font-size: 0.95rem;
+            color: #aaa;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .info-card .highlight {
+            color: #e0e0e0;
+            font-weight: 700;
+        }
+        .info-card .label {
+            color: #666;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-top: 15px;
+        }
+        .info-card .value {
+            color: #ff4444;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            color: #e0e0e0;
+            margin: 60px 0 40px;
+            text-align: center;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #ff4444;
+            margin: 15px auto 0;
+        }
+        .faq-list {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+        .faq-item {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid #2a2a2a;
+            padding: 25px 30px;
+        }
+        .faq-item h4 {
+            font-size: 1.1rem;
+            color: #ff4444;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .faq-item p {
+            font-size: 0.9rem;
+            color: #999;
+            line-height: 1.7;
+        }
+        .location-box {
+            background: rgba(255,68,68,0.05);
+            border: 2px solid #ff4444;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .location-box h3 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #ff4444;
+            margin-bottom: 20px;
+        }
+        .location-box p {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+        .location-box .big-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ff4444;
+            letter-spacing: 4px;
+        }
+        .contact-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .contact-row a {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 12px 30px;
+            border: 1px solid #ff4444;
+            transition: all 0.3s;
+        }
+        .contact-row a:hover {
+            background: #ff4444;
+            color: #1a1a1a;
+        }
+        @media (max-width: 768px) {
+            main {
+                padding: 100px 20px 40px;
+            }
+            .page-title {
+                font-size: 2.5rem;
+                letter-spacing: 4px;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .location-box {
+                padding: 25px;
+            }
+            .location-box .big-number {
+                font-size: 2rem;
+            }
+            .contact-row {
+                gap: 20px;
+            }
+            .contact-row a {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid #2a2a2a;
+            color: #555;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">가양<span>클럽</span></div>
+        <nav id="mainNav">
+            <a href="/">홈</a>
+            <a href="/lookbook">룩북</a>
+            <a href="/info">정보</a>
+            <a href="/contact">연락처</a>
+            <a href="tel:01062790862" class="phone-link">010-6279-0862</a>
+        </nav>
+        <div class="hamburger" onclick="document.getElementById('mainNav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="page-title">정보</h1>
+        <p class="page-subtitle">가양 클럽 씬의 모든 것 — 규칙은 없다, 스타일만 있을 뿐</p>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>📍 위치 & 공간</h3>
+                <p><span class="highlight">서울 강서구 가양동</span> — 지하철 9호선 가양역 3번 출구에서 도보 3분. 골목 안쪽, 간판 하나 없이 콘크리트 덩어리처럼 박혀 있다. 찾는 게 쉽지 않다. 그래야만 한다.</p>
+                <span class="label">주소</span>
+                <span class="value">서울 강서구 가양동 123-45 B1</span>
+                <span class="label">운영 시간</span>
+                <span class="value">매일 22:00 - 06:00 (금/토 새벽까지)</span>
+            </div>
+            <div class="info-card">
+                <h3>🎵 음악 & 분위기</h3>
+                <p>Techno, Industrial, Hardcore — 가양 클럽은 감성 팝송 틀어주는 곳이 아니다. 베이스가 뼛속까지 울리고, 사람들은 말 대신 몸으로 소통한다. 땀과 철근 냄새가 섞인 이 공간이 진짜다.</p>
+                <span class="label">장르</span>
+                <span class="value">테크노 / 인더스트리얼 / 하드코어</span>
+                <span class="label">드레스 코드</span>
+                <span class="value">검정, 가죽, 데님, 찢김 — 깔끔한 옷은 거절당할 수 있음</span>
+            </div>
+            <div class="info-card">
+                <h3>👤 룩북 철학</h3>
+                <p>가양 룩북은 <span class="highlight">거리에서 가장 거친 스타일</span>을 기록한다. 무대 위 아티스트가 아니라, 무대 아래 익명의 존재들. 그들의 옷차림이 곧 선언문이다. 여기서 패션은 권력이다.</p>
+                <span class="label">콘셉트</span>
+                <span class="value">스트리트 브루탈리즘 — 꾸밈없는 날것</span>
+                <span class="label">대상</span>
+                <span class="value">클럽에 진심인 사람, 가짜 관심 없는 사람</span>
+            </div>
+            <div class="info-card">
+                <h3>⚠️ 입장 규칙</h3>
+                <p>신분증 필수. 깔끔한 옷보다는 <span class="highlight">더럽고 거친 스타일</span>을 선호한다. 사진 촬영은 허용되나 플래시 금지. 클럽 안에서의 모든 행동은 본인 책임이다. 규칙을 깨는 패션이 법칙이다.</p>
+                <span class="label">입장료</span>
+                <span class="value">남성 20,000원 / 여성 15,000원 (룩북 참여 시 할인)</span>
+                <span class="label">연령</span>
+                <span class="value">만 19세 이상 (엄격)</span>
+            </div>
+        </div>
+
+        <div class="location-box">
+            <h3>⚡ 가양 클럽 — 콘크리트 정글의 심장</h3>
+            <p>지하 1층, 창문 하나 없는 콘크리트 방. 스피커가 벽을 울리고, 사람들은 새벽까지 춤춘다. 여기는 가양의 지하가 아니라, 이 도시의 분노가 모인 곳이다.</p>
+            <div class="big-number">010-6279-0862</div>
+            <p>전화 한 통이면 길을 알려준다. 찾아오든 말든, 우리는 매일 밤 문을 연다.</p>
+            <div class="contact-row">
+                <a href="tel:01062790862">전화 걸기</a>
+                <a href="https://map.naver.com" target="_blank">네이버 지도</a>
+                <a href="https://kko.kakao.com" target="_blank">카카오맵</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">자주 묻는 질문</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h4>Q: 처음 가는데 뭘 입어야 하나요?</h4>
+                <p>A: 검은색 옷, 가죽 자켓, 낡은 부츠 — 너무 신경 쓰지 마라. 중요한 건 태도다. 입구에서 쫄지 말고 들어와라.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: 사진 찍어도 되나요?</h4>
+                <p>A: 플래시만 조심해라. 여기 사람들은 익명성을 원한다. 얼굴이 나오면 허락을 받아라. 기본적인
+</body>
+</html>
