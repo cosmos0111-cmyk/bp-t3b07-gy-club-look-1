@@ -1,339 +1,335 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가양 클럽 룩북 | 블로그</title>
-    <meta name="description" content="가양 클럽 룩북 블로그 - 거리에서 가장 거친 스타일을 분석한다. 클럽 패션의 법칙을 깨는 진짜 룩북 이야기. 전화: 010-6279-0862">
-    <meta name="keywords" content="가양 클럽, 가양 클럽 룩북, 가양 클럽 패션, 클럽 룩북, 가양 나이트, 가양 클럽 스타일, 거리 패션, 클럽 문화, 블로그">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <link rel="canonical" href="https://gayang-club-hot.program-school.online/blog.html">
-    <meta property="og:title" content="가양 클럽 룩북 | 블로그">
-    <meta property="og:description" content="가양 클럽 룩북 블로그 - 거리에서 가장 거친 스타일을 분석한다. 클럽 패션의 법칙을 깨는 진짜 룩북 이야기. 전화: 010-6279-0862">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background: #1a1a1a;
-            color: #e0e0e0;
-            font-family: 'Impact', 'Arial Black', 'Helvetica Neue', sans-serif;
-            line-height: 1.4;
-            min-height: 100vh;
-            padding: 20px;
-            position: relative;
-            overflow-x: hidden;
-        }
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: repeating-linear-gradient(0deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 2px, transparent 2px, transparent 4px);
-            pointer-events: none;
-            z-index: 0;
-        }
-        img, svg {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        a {
-            color: #ff4444;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        a:hover {
-            color: #ff8888;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-            border-bottom: 3px solid #ff4444;
-            margin-bottom: 40px;
-            position: relative;
-            z-index: 10;
-        }
-        .logo {
-            font-size: 2rem;
-            font-weight: 900;
-            letter-spacing: -2px;
-            text-transform: uppercase;
-            color: #ff4444;
-            text-shadow: 3px 3px 0 #000;
-        }
-        .logo span {
-            color: #e0e0e0;
-            display: inline-block;
-            transform: skewX(-10deg);
-        }
-        nav {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-        }
-        nav a {
-            color: #e0e0e0;
-            font-size: 1.2rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            padding: 5px 10px;
-            border: 2px solid transparent;
-            transition: all 0.2s;
-        }
-        nav a:hover {
-            border-color: #ff4444;
-            color: #ff4444;
-            background: rgba(255,68,68,0.1);
-        }
-        .phone-link {
-            color: #ff4444;
-            font-size: 1.3rem;
-            font-weight: 900;
-            border: 2px solid #ff4444;
-            padding: 8px 16px;
-            background: #000;
-        }
-        .phone-link:hover {
-            background: #ff4444;
-            color: #000;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
-        .hamburger span {
-            width: 30px;
-            height: 4px;
-            background: #ff4444;
-            display: block;
-        }
-        @media (max-width: 768px) {
-            nav {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 80px;
-                right: 0;
-                background: #1a1a1a;
-                border: 2px solid #ff4444;
-                padding: 20px;
-                gap: 15px;
-                width: 200px;
-            }
-            nav.active {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-            .phone-link {
-                display: none;
-            }
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-        .blog-header {
-            text-align: center;
-            margin-bottom: 50px;
-            border: 3px solid #ff4444;
-            padding: 40px 20px;
-            background: rgba(0,0,0,0.5);
-        }
-        .blog-header h1 {
-            font-size: 3.5rem;
-            text-transform: uppercase;
-            letter-spacing: -3px;
-            color: #ff4444;
-            text-shadow: 4px 4px 0 #000;
-            margin-bottom: 20px;
-        }
-        .blog-header p {
-            font-size: 1.3rem;
-            color: #ccc;
-            max-width: 700px;
-            margin: 0 auto;
-            font-family: 'Courier New', monospace;
-        }
-        .blog-post {
-            border: 2px solid #333;
-            padding: 40px;
-            margin-bottom: 40px;
-            background: rgba(0,0,0,0.3);
-            position: relative;
-        }
-        .blog-post::before {
-            content: 'HOT';
-            position: absolute;
-            top: -15px;
-            left: 20px;
-            background: #ff4444;
-            color: #000;
-            padding: 5px 15px;
-            font-weight: 900;
-            font-size: 1rem;
-            letter-spacing: 2px;
-        }
-        .blog-post h2 {
-            font-size: 2.5rem;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            margin-bottom: 20px;
-            color: #ff4444;
-            border-left: 5px solid #ff4444;
-            padding-left: 20px;
-        }
-        .blog-post .meta {
-            font-family: 'Courier New', monospace;
-            color: #888;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #333;
-            padding-bottom: 10px;
-        }
-        .blog-post .content {
-            font-family: 'Courier New', 'Georgia', serif;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #ccc;
-        }
-        .blog-post .content p {
-            margin-bottom: 20px;
-        }
-        .blog-post .content strong {
-            color: #ff4444;
-            font-weight: 900;
-        }
-        .blog-post .content blockquote {
-            border-left: 4px solid #ff4444;
-            padding-left: 20px;
-            margin: 20px 0;
-            font-style: italic;
-            color: #aaa;
-            font-size: 1.2rem;
-        }
-        .blog-post .content ul {
-            list-style: none;
-            margin: 20px 0;
-        }
-        .blog-post .content ul li {
-            padding: 10px 0;
-            padding-left: 30px;
-            position: relative;
-            border-bottom: 1px solid #222;
-        }
-        .blog-post .content ul li::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: #ff4444;
-            font-weight: 900;
-        }
-        .blog-footer {
-            text-align: center;
-            padding: 40px 0;
-            border-top: 3px solid #ff4444;
-            margin-top: 40px;
-        }
-        .blog-footer a {
-            font-size: 1.5rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            border: 2px solid #ff4444;
-            padding: 10px 30px;
-            display: inline-block;
-        }
-        .blog-footer a:hover {
-            background: #ff4444;
-            color: #000;
-        }
-        @media (max-width: 768px) {
-            .logo {
-                font-size: 1.5rem;
-            }
-            .blog-header h1 {
-                font-size: 2rem;
-            }
-            .blog-post {
-                padding: 20px;
-            }
-            .blog-post h2 {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>가양 클럽 룩북 | 블로그</title>
+ <meta name="description" content="가양 클럽 룩북 블로그 - 거리에서 가장 거친 스타일을 분석한다. 클럽 패션의 법칙을 깨는 진짜 룩북 이야기.">
+ <meta name="keywords" content="가양 클럽, 가양 클럽 룩북, 가양 클럽 패션, 클럽 룩북, 가양 나이트, 가양 클럽 스타일, 거리 패션, 클럽 문화, 블로그">
+ <link rel="canonical" href="https://gayang-club-hot.program-school.online/blog.html">
+ <meta property="og:title" content="가양 클럽 룩북 | 블로그">
+ <meta property="og:description" content="가양 클럽 룩북 블로그 - 거리에서 가장 거친 스타일을 분석한다. 클럽 패션의 법칙을 깨는 진짜 룩북 이야기.">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ background: #1a1a1a;
+ color: #e0e0e0;
+ font-family: 'Impact', 'Arial Black', 'Helvetica Neue', sans-serif;
+ line-height: 1.4;
+ min-height: 100vh;
+ padding: 20px;
+ position: relative;
+ overflow-x: hidden;
+ }
+ body::before {
+ content: '';
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: repeating-linear-gradient(0deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 2px, transparent 2px, transparent 4px);
+ pointer-events: none;
+ z-index: 0;
+ }
+ img, svg {
+ max-width: 100%;
+ height: auto;
+ display: block;
+ }
+ a {
+ color: #ff4444;
+ text-decoration: none;
+ transition: color 0.2s;
+ }
+ a:hover {
+ color: #ff8888;
+ }
+ header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px 0;
+ border-bottom: 3px solid #ff4444;
+ margin-bottom: 40px;
+ position: relative;
+ z-index: 10;
+ }
+ .logo {
+ font-size: 2rem;
+ font-weight: 900;
+ letter-spacing: -2px;
+ text-transform: uppercase;
+ color: #ff4444;
+ text-shadow: 3px 3px 0 #000;
+ }
+ .logo span {
+ color: #e0e0e0;
+ display: inline-block;
+ transform: skewX(-10deg);
+ }
+ nav {
+ display: flex;
+ gap: 30px;
+ align-items: center;
+ }
+ nav a {
+ color: #e0e0e0;
+ font-size: 1.2rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ padding: 5px 10px;
+ border: 2px solid transparent;
+ transition: all 0.2s;
+ }
+ nav a:hover {
+ border-color: #ff4444;
+ color: #ff4444;
+ background: rgba(255,68,68,0.1);
+ }
+ .phone-link {
+ color: #ff4444;
+ font-size: 1.3rem;
+ font-weight: 900;
+ border: 2px solid #ff4444;
+ padding: 8px 16px;
+ background: #000;
+ }
+ .phone-link:hover {
+ background: #ff4444;
+ color: #000;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ }
+ .hamburger span {
+ width: 30px;
+ height: 4px;
+ background: #ff4444;
+ display: block;
+ }
+ @media (max-width: 768px) {
+ nav {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 80px;
+ right: 0;
+ background: #1a1a1a;
+ border: 2px solid #ff4444;
+ padding: 20px;
+ gap: 15px;
+ width: 200px;
+ }
+ nav.active {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
+ .phone-link {
+ display: none;
+ }
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ position: relative;
+ z-index: 1;
+ }
+ .blog-header {
+ text-align: center;
+ margin-bottom: 50px;
+ border: 3px solid #ff4444;
+ padding: 40px 20px;
+ background: rgba(0,0,0,0.5);
+ }
+ .blog-header h1 {
+ font-size: 3.5rem;
+ text-transform: uppercase;
+ letter-spacing: -3px;
+ color: #ff4444;
+ text-shadow: 4px 4px 0 #000;
+ margin-bottom: 20px;
+ }
+ .blog-header p {
+ font-size: 1.3rem;
+ color: #ccc;
+ max-width: 700px;
+ margin: 0 auto;
+ font-family: 'Courier New', monospace;
+ }
+ .blog-post {
+ border: 2px solid #333;
+ padding: 40px;
+ margin-bottom: 40px;
+ background: rgba(0,0,0,0.3);
+ position: relative;
+ }
+ .blog-post::before {
+ content: 'HOT';
+ position: absolute;
+ top: -15px;
+ left: 20px;
+ background: #ff4444;
+ color: #000;
+ padding: 5px 15px;
+ font-weight: 900;
+ font-size: 1rem;
+ letter-spacing: 2px;
+ }
+ .blog-post h2 {
+ font-size: 2.5rem;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ margin-bottom: 20px;
+ color: #ff4444;
+ border-left: 5px solid #ff4444;
+ padding-left: 20px;
+ }
+ .blog-post .meta {
+ font-family: 'Courier New', monospace;
+ color: #888;
+ font-size: 0.9rem;
+ margin-bottom: 20px;
+ border-bottom: 1px solid #333;
+ padding-bottom: 10px;
+ }
+ .blog-post .content {
+ font-family: 'Courier New', 'Georgia', serif;
+ font-size: 1.1rem;
+ line-height: 1.8;
+ color: #ccc;
+ }
+ .blog-post .content p {
+ margin-bottom: 20px;
+ }
+ .blog-post .content strong {
+ color: #ff4444;
+ font-weight: 900;
+ }
+ .blog-post .content blockquote {
+ border-left: 4px solid #ff4444;
+ padding-left: 20px;
+ margin: 20px 0;
+ font-style: italic;
+ color: #aaa;
+ font-size: 1.2rem;
+ }
+ .blog-post .content ul {
+ list-style: none;
+ margin: 20px 0;
+ }
+ .blog-post .content ul li {
+ padding: 10px 0;
+ padding-left: 30px;
+ position: relative;
+ border-bottom: 1px solid #222;
+ }
+ .blog-post .content ul li::before {
+ content: '→';
+ position: absolute;
+ left: 0;
+ color: #ff4444;
+ font-weight: 900;
+ }
+ .blog-footer {
+ text-align: center;
+ padding: 40px 0;
+ border-top: 3px solid #ff4444;
+ margin-top: 40px;
+ }
+ .blog-footer a {
+ font-size: 1.5rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ border: 2px solid #ff4444;
+ padding: 10px 30px;
+ display: inline-block;
+ }
+ .blog-footer a:hover {
+ background: #ff4444;
+ color: #000;
+ }
+ @media (max-width: 768px) {
+ .logo {
+ font-size: 1.5rem;
+ }
+ .blog-header h1 {
+ font-size: 2rem;
+ }
+ .blog-post {
+ padding: 20px;
+ }
+ .blog-post h2 {
+ font-size: 1.8rem;
+ }
+ }
+ </style>
   <meta property="og:url" content="https://gayang-club-hot.program-school.online/blog.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                가양<span>클럽</span>룩북
-            </div>
-            <nav id="mainNav">
-                <a href="/">홈</a>
-                <a href="/about">어바웃</a>
-                <a href="/lookbook">룩북</a>
-                <a href="/blog">블로그</a>
-                <a href="/contact">컨택</a>
-                <a href="tel:01062790862" class="phone-link">010-6279-0862</a>
-            </nav>
-            <div class="hamburger" onclick="document.getElementById('mainNav').classList.toggle('active')">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </header>
+ <div class="container">
+ <header>
+ <div class="logo">
+ 가양<span>클럽</span>룩북
+ </div>
+ <nav id="mainNav">
+ <a href="/">홈</a>
+ <a href="/about">어바웃</a>
+ <a href="/lookbook">룩북</a>
+ <a href="/blog">블로그</a>
+ <a href="/contact">컨택</a>
+ 
+ </nav>
+ <div class="hamburger" onclick="document.getElementById('mainNav').classList.toggle('active')">
+ 
+ 
+ 
+ </div>
+ </header>
 
-        <div class="blog-header">
-            <h1>거리의 법칙을 다시 써라</h1>
-            <p>가양 클럽 룩북 블로그 — 규칙은 깨라고 있는 거다. 진짜 패션은 거리에서 탄생한다. 이 새끼들아, 눈을 뜨라고.</p>
-        </div>
+ <div class="blog-header">
+ <h1>거리의 법칙을 다시 써라</h1>
+ <p>가양 클럽 룩북 블로그 — 규칙은 깨라고 있는 거다. 진짜 패션은 거리에서 탄생한다. 이 새끼들아, 눈을 뜨라고.</p>
+ </div>
 
-        <div class="blog-post">
-            <h2>클럽 패션의 진화: 가양에서 시작된 반란</h2>
-            <div class="meta">2025.03.15 | 작성자: 거리의 목소리 | 조회: 4,207</div>
-            <div class="content">
-                <p><strong>쉽게 입지 마라.</strong> 가양 클럽의 문을 열기 전에 너희가 알아야 할 게 있다. 여기는 평범한 옷을 입고 오는 곳이 아니다. 여기는 <strong>룩북</strong>이 곧 무기다. 거리의 법칙은 단순하다: 눈에 띄지 않으면 죽은 거다.</p>
-                
-                <p>가양은 서울의 변두리? 그건 착각이다. 가양은 <strong>클럽 문화의 마지막 아지트</strong>다. 강남의 가짜 화려함에 엿을 먹인 진짜 거친 에너지가 여기 있다. 클럽 바닥은 땀과 음악으로 미끄럽고, 공기는 담배 연기와 자유로 가득 차 있다. 여기서 패션은 생존이다.</p>
+ <div class="blog-post">
+ <h2>클럽 패션의 진화: 가양에서 시작된 반란</h2>
+ <div class="meta">2025.03.15 | 작성자: 거리의 목소리 | 조회: 4,207</div>
+ <div class="content">
+ <p><strong>쉽게 입지 마라.</strong> 가양 클럽의 문을 열기 전에 너희가 알아야 할 게 있다. 여기는 평범한 옷을 입고 오는 곳이 아니다. 여기는 <strong>룩북</strong>이 곧 무기다. 거리의 법칙은 단순하다: 눈에 띄지 않으면 죽은 거다.</p>
+ 
+ <p>가양은 서울의 변두리? 그건 착각이다. 가양은 <strong>클럽 문화의 마지막 아지트</strong>다. 강남의 가짜 화려함에 엿을 먹인 진짜 거친 에너지가 여기 있다. 클럽 바닥은 땀과 음악으로 미끄럽고, 공기는 담배 연기와 자유로 가득 차 있다. 여기서 패션은 생존이다.</p>
 
-                <blockquote>"니가 입은 그 옷, 진짜 니 거 맞냐? 가양 클럽에 오면 알게 된다. 진짜 스타일은 브랜드가 아니라 태도에서 나온다는 걸."</blockquote>
+ <blockquote>"니가 입은 그 옷, 진짜 니 거 맞냐? 가양 클럽에 오면 알게 된다. 진짜 스타일은 브랜드가 아니라 태도에서 나온다는 걸."</blockquote>
 
-                <p><strong>룩북의 핵심:</strong> 레이어드? 그건 기본이고. 찢어진 청바지에 철제 체인, 오버사이즈 재킷에 군화. 여기에 형광색 악세서리 하나 툭 던져라. 그리고 가장 중요한 건 — <strong>자신감</strong>. 니가 입은 옷이 니를 말해줘야 한다. "나는 여기 있다. 씨발, 어쩔래?" 이런 느낌.</p>
+ <p><strong>룩북의 핵심:</strong> 레이어드? 그건 기본이고. 찢어진 청바지에 철제 체인, 오버사이즈 재킷에 군화. 여기에 형광색 악세서리 하나 툭 던져라. 그리고 가장 중요한 건 — <strong>자신감</strong>. 니가 입은 옷이 니를 말해줘야 한다. "나는 여기 있다. 씨발, 어쩔래?" 이런 느낌.</p>
 
-                <ul>
-                    <li><strong>가죽 재킷</strong> — 클럽의 교과서. 빈티지한 느낌이면 더 좋다. 때와 흠집이 실력이다.</li>
-                    <li><strong>오버사이즈 실루엣</strong> — 몸을 감추는 게 아니라 해방시키는 거다. 답답한 꽉 끼는 옷은 집에 두고 와라.</li>
-                    <li><strong>악세서리 과잉</strong> — 체인, 링, 핀. 많을수록 좋다. 규칙을 깨는 게 규칙이다.</li>
-                    <li><strong>신발은 무조건 더러워야 한다</strong> — 깨끗한 신발은 범죄다. 클럽 바닥에 니 존재를 각인시켜라.</li>
-                </ul>
+ <ul>
+ <li><strong>가죽 재킷</strong> — 클럽의 교과서. 빈티지한 느낌이면 더 좋다. 때와 흠집이 실력이다.</li>
+ <li><strong>오버사이즈 실루엣</strong> — 몸을 감추는 게 아니라 해방시키는 거다. 답답한 꽉 끼는 옷은 집에 두고 와라.</li>
+ <li><strong>악세서리 과잉</strong> — 체인, 링, 핀. 많을수록 좋다. 규칙을 깨는 게 규칙이다.</li>
+ <li><strong>신발은 무조건 더러워야 한다</strong> — 깨끗한 신발은 범죄다. 클럽 바닥에 니 존재를 각인시켜라.</li>
+ </ul>
 
-                <p>가양 클럽의 밤은 길다. 새벽 4시, 마지막 곡이 끝날 때까지 니 스타일은 타협하지 마라. 여기는 <strong>룩북의 전쟁터</strong>다. 니가 지면, 다음 번엔 더 강하게 돌아와라. 가양은 기다려준다. 항상.</p>
-                
-                <p><strong>결론:</strong> 니 옷장을 열어라. 거기 있는 모든 규칙을 불태워라. 가양 클럽 룩북은 니가 진짜로 원하는 스타일을 찾는 여정이다. 그리고 그 여정은 여기서 시작된다. 지금 전화해라. 010-6279-0862. 우리는 항상 준비되어 있다.</p>
-            </div>
-        </div>
+ <p>가양 클럽의 밤은 길다. 새벽 4시, 마지막 곡이 끝날 때까지 니 스타일은 타협하지 마라. 여기는 <strong>룩북의 전쟁터</strong>다. 니가 지면, 다음 번엔 더 강하게 돌아와라. 가양은 기다려준다. 항상.</p>
+ 
+ <p><strong>결론:</strong>니 옷장을 열어라. 거기 있는 모든 규칙을 불태워라. 가양 클럽 룩북은 니가 진짜로 원하는 스타일을 찾는 여정이다. 그리고 그 여정은 여기서 시작된다. 지금 전화해라. 우리는 항상 준비되어 있다.</p>
+ </div>
+ </div>
 
-        <div class="blog-footer">
-            <a href="tel:01062790862">가양 클럽 룩북 문의</a>
-        </div>
-    </div>
+ 
+ </div>
 </body>
 </html>

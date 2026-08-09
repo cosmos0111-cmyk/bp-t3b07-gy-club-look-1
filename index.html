@@ -1,515 +1,513 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-midnight-gold">
-    
-    <title>가양 클럽 룩북 — 전문 예약 컨시어지를 위한 실무 가이드</title>
-    <meta name="description" content="가양 클럽 룩북. 단순한 방문 정보가 아닌, 예약부터 정산까지의 전 과정을 관리하는 전문 컨시어지 관점의 선택 기준입니다.">
-    <meta name="keywords" content="가양클럽, 가양 클럽, 강남 클럽, 남산동 클럽, 가양 로션, 가양 룸, 가양 예약">
-    <link rel="canonical" href="https://gayang-club-hot.program-school.online/">
-    
-    <meta property="og:title" content="가양 클럽 룩북 — 전문 예약 컨시어지를 위한 실무 가이드">
-    <meta property="og:description" content="가양 클럽 룩북. 단순한 방문 정보가 아닌, 예약부터 정산까지의 전 과정을 관리하는 전문 컨시어지 관점의 선택 기준입니다.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gayang-club-hot.program-school.online/">
-    <meta property="og:image" content="https://placehold.co/1200x630/1c1108/9a7a3a?text=Gayang+Club+Lookbook">
-    <meta name="twitter:card" content="summary">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>가양 클럽 룩북 — 전문 예약 컨시어지를 위한 실무 가이드</title>
+ <meta name="description" content="가양 클럽 룩북. 단순한 방문 정보가 아닌, 예약부터 정산까지의 전 과정을 관리하는 전문 컨시어지 관점의 선택 기준입니다.">
+ <meta name="keywords" content="가양클럽, 가양 클럽, 강남 클럽, 남산동 클럽, 가양 로션, 가양 룸, 가양 예약">
+ <link rel="canonical" href="https://gayang-club-hot.program-school.online/">
+ 
+ <meta property="og:title" content="가양 클럽 룩북 — 전문 예약 컨시어지를 위한 실무 가이드">
+ <meta property="og:description" content="가양 클럽 룩북. 단순한 방문 정보가 아닌, 예약부터 정산까지의 전 과정을 관리하는 전문 컨시어지 관점의 선택 기준입니다.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://gayang-club-hot.program-school.online/">
+ <meta property="og:image" content="https://placehold.co/1200x630/1c1108/9a7a3a?text=Gayang+Club+Lookbook">
+ <meta name="twitter:card" content="summary">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;700;900&family=Noto+Serif+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+ <!-- Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;700;900&family=Noto+Serif+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --color-primary: #1c1108;
-            --color-secondary: #f9f4ec;
-            --color-accent: #9a7a3a;
-            --color-text-main: #2d261e;
-            --color-text-muted: #5b4d42;
-            --border-width: 2px;
-            --radius: 4px;
-            --shadow: 0 4px 20px rgba(0,0,0,0.015);
-            --font-display: 'Playfair Display', serif;
-            --font-serif: 'Cormorant Garamond', serif;
-            --font-body: 'Noto Serif KR', serif;
-        }
+ <style>
+ :root {
+ --color-primary: #1c1108;
+ --color-secondary: #f9f4ec;
+ --color-accent: #9a7a3a;
+ --color-text-main: #2d261e;
+ --color-text-muted: #5b4d42;
+ --border-width: 2px;
+ --radius: 4px;
+ --shadow: 0 4px 20px rgba(0,0,0,0.015);
+ --font-display: 'Playfair Display', serif;
+ --font-serif: 'Cormorant Garamond', serif;
+ --font-body: 'Noto Serif KR', serif;
+ }
 
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        body {
-            font-family: var(--font-body);
-            background-color: var(--color-secondary);
-            color: var(--color-text-main);
-            line-height: 1.6;
-            font-size: 18px;
-            -webkit-font-smoothing: antialiased;
-        }
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+ body {
+ font-family: var(--font-body);
+ background-color: var(--color-secondary);
+ color: var(--color-text-main);
+ line-height: 1.6;
+ font-size: 18px;
+ -webkit-font-smoothing: antialiased;
+ }
 
-        h1, h2, h3, h4 {
-            font-family: var(--font-display);
-            color: var(--color-primary);
-            line-height: 1.2;
-            margin-bottom: 1rem;
-        }
+ h1, h2, h3, h4 {
+ font-family: var(--font-display);
+ color: var(--color-primary);
+ line-height: 1.2;
+ margin-bottom: 1rem;
+ }
 
-        h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 900; }
-        h2 { font-size: 2rem; border-bottom: var(--border-width) solid var(--color-accent); padding-bottom: 0.5rem; margin-top: 3rem; display: inline-block; min-width: fit-content; }
-        h3 { font-size: 1.5rem; color: var(--color-accent); margin-top: 2rem; }
-        
-        p { margin-bottom: 1.5rem; text-align: justify; }
+ h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 900; }
+ h2 { font-size: 2rem; border-bottom: var(--border-width) solid var(--color-accent); padding-bottom: 0.5rem; margin-top: 3rem; display: inline-block; min-width: fit-content; }
+ h3 { font-size: 1.5rem; color: var(--color-accent); margin-top: 2rem; }
+ 
+ p { margin-bottom: 1.5rem; text-align: justify; }
 
-        a { color: var(--color-primary); text-decoration: underline; transition: color 0.3s; }
-        a:hover { color: var(--color-accent); }
+ a { color: var(--color-primary); text-decoration: underline; transition: color 0.3s; }
+ a:hover { color: var(--color-accent); }
 
-        /* Layout */
-        .container {
-            max-width: 1140px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
+ /* Layout */
+ .container {
+ max-width: 1140px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
 
-        .layout-grid {
-            display: grid;
-            grid-template-columns: 1.3fr 0.7fr;
-            gap: 48px;
-            align-items: start;
-        }
+ .layout-grid {
+ display: grid;
+ grid-template-columns: 1.3fr 0.7fr;
+ gap: 48px;
+ align-items: start;
+ }
 
-        /* Hero */
-        .hero {
-            position: relative;
-            height: 60vh;
-            background-color: var(--color-primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            text-align: center;
-            color: #fff;
-        }
+ /* Hero */
+ .hero {
+ position: relative;
+ height: 60vh;
+ background-color: var(--color-primary);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ overflow: hidden;
+ text-align: center;
+ color: #fff;
+ }
 
-        .hero::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background-image: 
-                linear-gradient(45deg, transparent 49%, var(--color-primary) 49%, var(--color-primary) 51%, transparent 51%),
-                linear-gradient(-45deg, transparent 49%, var(--color-primary) 49%, var(--color-primary) 51%, transparent 51%);
-            background-size: 40px 40px;
-            opacity: 0.1;
-        }
+ .hero::before {
+ content: "";
+ position: absolute;
+ inset: 0;
+ background-image: 
+ linear-gradient(45deg, transparent 49%, var(--color-primary) 49%, var(--color-primary) 51%, transparent 51%),
+ linear-gradient(-45deg, transparent 49%, var(--color-primary) 49%, var(--color-primary) 51%, transparent 51%);
+ background-size: 40px 40px;
+ opacity: 0.1;
+ }
 
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            padding: 3rem;
-            border: var(--border-width) solid rgba(255,255,255,0.2);
-            background: rgba(28,17,8,0.6);
-            backdrop-filter: blur(4px);
-        }
+ .hero-content {
+ position: relative;
+ z-index: 2;
+ padding: 3rem;
+ border: var(--border-width) solid rgba(255,255,255,0.2);
+ background: rgba(28,17,8,0.6);
+ backdrop-filter: blur(4px);
+ }
 
-        .hero h1 { color: #fff; margin-bottom: 0; }
-        
-        /* Typography Utilities */
-        .drop-cap::first-letter {
-            font-family: var(--font-display);
-            font-size: 3.5em;
-            float: left;
-            line-height: 0.8;
-            padding-right: 0.2rem;
-            color: var(--color-accent);
-        }
+ .hero h1 { color: #fff; margin-bottom: 0; }
+ 
+ /* Typography Utilities */
+ .drop-cap::first-letter {
+ font-family: var(--font-display);
+ font-size: 3.5em;
+ float: left;
+ line-height: 0.8;
+ padding-right: 0.2rem;
+ color: var(--color-accent);
+ }
 
-        /* Cards & Borders */
-        .card {
-            background: #fff;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            border: var(--border-width) solid rgba(0,0,0,0.05);
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
+ /* Cards & Borders */
+ .card {
+ background: #fff;
+ border-radius: var(--radius);
+ box-shadow: var(--shadow);
+ border: var(--border-width) solid rgba(0,0,0,0.05);
+ padding: 2rem;
+ margin-bottom: 2rem;
+ }
 
-        .card-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 1rem;
-            margin-bottom: 1rem;
-        }
+ .card-header {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ border-bottom: 1px solid #eee;
+ padding-bottom: 1rem;
+ margin-bottom: 1rem;
+ }
 
-        .card-title { font-family: var(--font-display); font-weight: 700; color: var(--color-primary); }
-        
-        /* Asymmetric Profile Card */
-        .profile-card {
-            background: #f0ebe3;
-            border-left: 6px solid var(--color-accent);
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
+ .card-title { font-family: var(--font-display); font-weight: 700; color: var(--color-primary); }
+ 
+ /* Asymmetric Profile Card */
+ .profile-card {
+ background: #f0ebe3;
+ border-left: 6px solid var(--color-accent);
+ padding: 1.5rem;
+ margin-top: 2rem;
+ }
 
-        .profile-label {
-            display: block;
-            font-family: 'Cormorant Garamond', serif;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 1px;
-            color: var(--color-accent);
-            margin-bottom: 0.25rem;
-        }
+ .profile-label {
+ display: block;
+ font-family: 'Cormorant Garamond', serif;
+ text-transform: uppercase;
+ font-size: 0.75rem;
+ letter-spacing: 1px;
+ color: var(--color-accent);
+ margin-bottom: 0.25rem;
+ }
 
-        /* List Styling */
-        .check-list { list-style: none; padding: 0; }
-        .check-list li {
-            position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 1rem;
-            font-size: 1.05rem;
-        }
-        .check-list li::before {
-            content: "✦";
-            position: absolute;
-            left: 0;
-            color: var(--color-accent);
-            font-family: serif;
-        }
+ /* List Styling */
+ .check-list { list-style: none; padding: 0; }
+ .check-list li {
+ position: relative;
+ padding-left: 1.5rem;
+ margin-bottom: 1rem;
+ font-size: 1.05rem;
+ }
+ .check-list li::before {
+ content: "✦";
+ position: absolute;
+ left: 0;
+ color: var(--color-accent);
+ font-family: serif;
+ }
 
-        /* Section Spacing */
-        section { padding: 48px 0; border-top: 1px solid rgba(0,0,0,0.05); }
-        section:first-of-type { padding-top: 0; }
+ /* Section Spacing */
+ section { padding: 48px 0; border-top: 1px solid rgba(0,0,0,0.05); }
+ section:first-of-type { padding-top: 0; }
 
-        /* Responsive */
-        @media (max-width: 960px) {
-            .layout-grid { grid-template-columns: 1fr; gap: 24px; }
-            .hero { height: 50vh; }
-            h1 { font-size: 2.5rem; }
-        }
+ /* Responsive */
+ @media (max-width: 960px) {
+ .layout-grid { grid-template-columns: 1fr; gap: 24px; }
+ .hero { height: 50vh; }
+ h1 { font-size: 2.5rem; }
+ }
 
-        @media (max-width: 768px) {
-            .container { padding: 0 16px; }
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.5rem; }
-            section { padding: 32px 0; }
-        }
+ @media (max-width: 768px) {
+ .container { padding: 0 16px; }
+ h1 { font-size: 2rem; }
+ h2 { font-size: 1.5rem; }
+ section { padding: 32px 0; }
+ }
 
-        /* Navigation */
-        .nav-wrapper { position: sticky; top: 0; z-index: 100; background: rgba(249, 244, 236, 0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #e0dcd3; }
-        .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 64px; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-        .logo { font-family: var(--font-display); font-weight: 900; color: var(--color-primary); text-decoration: none; font-size: 1.5rem; letter-spacing: -0.02em; }
-        
-        .nav-menu { display: flex; list-style: none; gap: 32px; }
-        .nav-link { font-family: var(--font-display); color: var(--color-primary); text-decoration: none; font-weight: 500; position: relative; transition: color 0.3s; }
-        .nav-link::after { content: ''; position: absolute; width: 0; height: 1px; bottom: -4px; left: 0; background-color: var(--color-accent); transition: width 0.3s; }
-        .nav-link:hover, .nav-link.active { color: var(--color-accent); }
-        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+ /* Navigation */
+ .nav-wrapper { position: sticky; top: 0; z-index: 100; background: rgba(249, 244, 236, 0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #e0dcd3; }
+ .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 64px; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+ .logo { font-family: var(--font-display); font-weight: 900; color: var(--color-primary); text-decoration: none; font-size: 1.5rem; letter-spacing: -0.02em; }
+ 
+ .nav-menu { display: flex; list-style: none; gap: 32px; }
+ .nav-link { font-family: var(--font-display); color: var(--color-primary); text-decoration: none; font-weight: 500; position: relative; transition: color 0.3s; }
+ .nav-link::after { content: ''; position: absolute; width: 0; height: 1px; bottom: -4px; left: 0; background-color: var(--color-accent); transition: width 0.3s; }
+ .nav-link:hover, .nav-link.active { color: var(--color-accent); }
+ .nav-link:hover::after, .nav-link.active::after { width: 100%; }
 
-        .hamburger { display: none; cursor: pointer; font-size: 2rem; color: var(--color-primary); }
+ .hamburger { display: none; cursor: pointer; font-size: 2rem; color: var(--color-primary); }
 
-        @media (max-width: 768px) {
-            .nav-menu { 
-                position: fixed; top: 64px; left: 0; right: 0; 
-                background: var(--color-secondary); 
-                flex-direction: column; padding: 24px; 
-                gap: 16px; text-align: center;
-            }
-            .hamburger { display: block; }
-        }
+ @media (max-width: 768px) {
+ .nav-menu { 
+ position: fixed; top: 64px; left: 0; right: 0; 
+ background: var(--color-secondary); 
+ flex-direction: column; padding: 24px; 
+ gap: 16px; text-align: center;
+ }
+ .hamburger { display: block; }
+ }
 
-        /* FAQ */
-        .faq-item { border-bottom: 1px dashed #dcdcdc; padding: 1rem 0; }
-        .faq-question { font-family: var(--font-display); font-weight: 700; margin-bottom: 0.5rem; color: var(--color-primary); }
-        .faq-answer { color: var(--color-text-muted); font-size: 0.95rem; }
+ /* FAQ */
+ .faq-item { border-bottom: 1px dashed #dcdcdc; padding: 1rem 0; }
+ .faq-question { font-family: var(--font-display); font-weight: 700; margin-bottom: 0.5rem; color: var(--color-primary); }
+ .faq-answer { color: var(--color-text-muted); font-size: 0.95rem; }
 
-        /* Footer */
-        footer { background-color: var(--color-primary); color: #dcdcdc; padding: 64px 0; margin-top: 64px; }
-        .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; max-width: 1140px; margin: 0 auto; padding: 0 24px; }
-        .footer-author { background: rgba(255,255,255,0.05); padding: 24px; border-radius: var(--radius); border-left: 4px solid var(--color-accent); margin-top: 1rem; }
-        .copyright { text-align: center; font-size: 0.85rem; opacity: 0.7; margin-top: 32px; }
+ /* Footer */
+ footer { background-color: var(--color-primary); color: #dcdcdc; padding: 64px 0; margin-top: 64px; }
+ .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+ .footer-author { background: rgba(255,255,255,0.05); padding: 24px; border-radius: var(--radius); border-left: 4px solid var(--color-accent); margin-top: 1rem; }
+ .copyright { text-align: center; font-size: 0.85rem; opacity: 0.7; margin-top: 32px; }
 
-        /* DOM Noise */
-        .graphic-element { width: 100%; height: auto; border-radius: var(--radius); margin-bottom: 24px; display: block; object-fit: cover; }
-        
-        .cache-marker { 
-            opacity: 0; height: 0; overflow: hidden; 
-            position: fixed; top: -9999px; left: -9999px; 
-        }
-    </style>
+ /* DOM Noise */
+ .graphic-element { width: 100%; height: auto; border-radius: var(--radius); margin-bottom: 24px; display: block; object-fit: cover; }
+ 
+ .cache-marker { 
+ opacity: 0; height: 0; overflow: hidden; 
+ position: fixed; top: -9999px; left: -9999px; 
+ }
+ </style>
 
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "가양 클럽 룩북",
-        "image": "https://placehold.co/600x400/1c1108/9a7a3a?text=Gayang+Club",
-        "description": "전문 예약 컨시어지를 위한 실무 가이드입니다.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "가양",
-          "addressRegion": "서울",
-          "addressCountry": "대한민국"
-        },
-        "priceRange": "$$"
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "가양 클럽에서 예약을 어떻게 해야 하나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "가양 클럽은 전용 예약 채널로 연락이 가장 빠르고 확실합니다. 단순 문자나 카카오톡보다는 매니저 전용 메신저나 전화로 연락하는 것이 프로세스상 더 효율적입니다."
-            }
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "Question",
-            "name": "인원이 갑자기 줄어들거나 늘어날 때 어떻게 처리하나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "대부분의 클럽은 24시간 전까지 인원 변동이 가능합니다. 예약 확정 시 'Waitlist'를 미리 확보하는 것이 안전하며, 당일 변동 시에도 즉시 연락 가능한 창구가 필수적입니다."
-            }
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "Question",
-            "name": "정산 및 결제 조건은 어떻게 되나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "가양 클럽의 정산 방식은 방문 전 약 30~50% 선입금과 출석 후 잔금으로 나뉩니다. 정확한 금액과 입금 계좌를 확인하는 것이 최종 비용에 대한 분쟁을 방지합니다."
-            }
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "로컬 가이드 김현수",
-        "jobTitle": "가양 지역 정보 큐레이터"
-      }
-    ]
-    </script>
+ <script type="application/ld+json">
+ [
+ {
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "가양 클럽 룩북",
+ "image": "https://placehold.co/600x400/1c1108/9a7a3a?text=Gayang+Club",
+ "description": "전문 예약 컨시어지를 위한 실무 가이드입니다.",
+ "address": {
+ "@type": "PostalAddress",
+ "addressLocality": "가양",
+ "addressRegion": "서울",
+ "addressCountry": "대한민국"
+ },
+ "priceRange": "$$"
+ },
+ {
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "가양 클럽에서 예약을 어떻게 해야 하나요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "가양 클럽은 전용 예약 채널로 연락이 가장 빠르고 확실합니다. 단순 문자나 카카오톡보다는 매니저 전용 메신저나 전화로 연락하는 것이 프로세스상 더 효율적입니다."
+ }
+ },
+ {
+ "@context": "https://schema.org",
+ "@type": "Question",
+ "name": "인원이 갑자기 줄어들거나 늘어날 때 어떻게 처리하나요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "대부분의 클럽은 24시간 전까지 인원 변동이 가능합니다. 예약 확정 시 'Waitlist'를 미리 확보하는 것이 안전하며, 당일 변동 시에도 즉시 연락 가능한 창구가 필수적입니다."
+ }
+ },
+ {
+ "@context": "https://schema.org",
+ "@type": "Question",
+ "name": "정산 및 결제 조건은 어떻게 되나요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "가양 클럽의 정산 방식은 방문 전 약 30~50% 선입금과 출석 후 잔금으로 나뉩니다. 정확한 금액과 입금 계좌를 확인하는 것이 최종 비용에 대한 분쟁을 방지합니다."
+ }
+ }
+ ]
+ },
+ {
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "로컬 가이드 김현수",
+ "jobTitle": "가양 지역 정보 큐레이터"
+ }
+ ]
+ </script>
 
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="nav-wrapper">
-        <div class="nav-inner">
-            <a href="#" class="logo">GAYANG LOOKBOOK</a>
-            <div class="hamburger">☰</div>
-            <ul class="nav-menu" style="order: 2;"> <!-- Shuffled order via inline style -->
-                <li style="order: 1;"><a href="#intro" class="nav-link active">소개</a></li>
-                <li style="order: 4;"><a href="#contact" class="nav-link">연락 창구</a></li>
-                <li style="order: 3;"><a href="#capacity" class="nav-link">인원 관리</a></li>
-                <li style="order: 5;"><a href="#closing" class="nav-link">마무리 및 정산</a></li>
-                <li style="order: 2;"><a href="#faq" class="nav-link">자주 묻는 질문</a></li>
-            </ul>
-        </div>
-    </nav>
+ <!-- Navigation -->
+ <nav class="nav-wrapper">
+ <div class="nav-inner">
+ <a href="#" class="logo">GAYANG LOOKBOOK</a>
+ <div class="hamburger">☰</div>
+ <ul class="nav-menu" style="order: 2;"> <!-- Shuffled order via inline style -->
+ <li style="order: 1;"><a href="#intro" class="nav-link active">소개</a></li>
+ <li style="order: 4;"><a href="#contact" class="nav-link">연락 창구</a></li>
+ <li style="order: 3;"><a href="#capacity" class="nav-link">인원 관리</a></li>
+ <li style="order: 5;"><a href="#closing" class="nav-link">마무리 및 정산</a></li>
+ <li style="order: 2;"><a href="#faq" class="nav-link">자주 묻는 질문</a></li>
+ </ul>
+ </div>
+ </nav>
 
-    <!-- Hero -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>가양 클럽 룩북 —<br>전문 예약 컨시어지를 위한<br>실무 가이드</h1>
-        </div>
-    </header>
+ <!-- Hero -->
+ <header class="hero">
+ <div class="hero-content">
+ <h1>가양 클럽 룩북 —<br>전문 예약 컨시어지를 위한<br>실무 가이드</h1>
+ </div>
+ </header>
 
-    <!-- Main Content -->
-    <main class="container">
-        
-        <!-- Intro Section -->
-        <section id="intro" aria-labelledby="intro-heading">
-            <div class="layout-grid">
-                <article>
-                    <h2 id="intro-heading" class="drop-cap">1. 가양 클럽, 준비하는 사람의 관점</h2>
-                    <p>
-                        대부분의 클라이언트는 "가양 클럽"이라는 키워드를 검색했을 때 단순히 '어떤 분위기인가', '가격은 얼마인가'를 먼저 떠올립니다. 하지만 본 가이드는 방문 전의 **준비 과정**에 집중합니다. 가양동과 남산동 인근의 클럽들은 위치가 밀집해 있어, 어떤 곳에서 예약하느냐에 따라 이동 시간이나 대기 시간이 결정됩니다. 
-                    </p>
-                    <p>
-                        따라서 이 페이지는 단순한 소개문보다는 <strong>실무 담당자 관점</strong>에서 작성되었습니다. 즉, "어디로 연락해야 하는가", "예약 확정 후 발생할 수 있는 변수는 없는가"와 같은 준비 과정의 안정성을 검증하는 자료입니다. 이미 여러 곳을 비교 중이시라면, 본 섹션에서 제공하는 **연락 채널의 명확성**과 **인원 변동 대응 능력**을 핵심 체크 포인트로 삼으시길 권장합니다.
-                    </p>
-                </article>
+ <!-- Main Content -->
+ <main class="container">
+ 
+ <!-- Intro Section -->
+ <section id="intro" aria-labelledby="intro-heading">
+ <div class="layout-grid">
+ <article>
+ <h2 id="intro-heading" class="drop-cap">1. 가양 클럽, 준비하는 사람의 관점</h2>
+ <p>
+ 대부분의 클라이언트는 "가양 클럽"이라는 키워드를 검색했을 때 단순히 '어떤 분위기인가', '가격은 얼마인가'를 먼저 떠올립니다. 하지만 본 가이드는 방문 전의 **준비 과정**에 집중합니다. 가양동과 남산동 인근의 클럽들은 위치가 밀집해 있어, 어떤 곳에서 예약하느냐에 따라 이동 시간이나 대기 시간이 결정됩니다. 
+ </p>
+ <p>
+ 따라서 이 페이지는 단순한 소개문보다는 <strong>실무 담당자 관점</strong>에서 작성되었습니다. 즉, "어디로 연락해야 하는가", "예약 확정 후 발생할 수 있는 변수는 없는가"와 같은 준비 과정의 안정성을 검증하는 자료입니다. 이미 여러 곳을 비교 중이시라면, 본 섹션에서 제공하는 **연락 채널의 명확성**과 **인원 변동 대응 능력**을 핵심 체크 포인트로 삼으시길 권장합니다.
+ </p>
+ </article>
 
-                <aside class="profile-card">
-                    <span class="profile-label">Quick Profile</span>
-                    <h3>가양 클럽 룩북 — 기본 정보</h3>
-                    <div style="margin-top: 16px; display: grid; gap: 12px;">
-                        <div>
-                            <span class="profile-label">지역 (Region)</span>
-                            <strong>서울특별시 동작구 가양동 (남산 인근)</strong>
-                        </div>
-                        <div>
-                            <span class="profile-label">연락 방식</span>
-                            <strong>전용 예약 채널 (전화/메신저)</strong>
-                        </div>
-                        <div>
-                            <span class="profile-label">핵심 특징</span>
-                            <strong>예약 프로세스 투명화 및 정산 가이드 제공</strong>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-        </section>
+ <aside class="profile-card">
+ <span class="profile-label">Quick Profile</span>
+ <h3>가양 클럽 룩북 — 기본 정보</h3>
+ <div style="margin-top: 16px; display: grid; gap: 12px;">
+ <div>
+ <span class="profile-label">지역 (Region)</span>
+ <strong>서울특별시 동작구 가양동 (남산 인근)</strong>
+ </div>
+ <div>
+ <span class="profile-label">연락 방식</span>
+ <strong>전용 예약 채널 (전화/메신저)</strong>
+ </div>
+ <div>
+ <span class="profile-label">핵심 특징</span>
+ <strong>예약 프로세스 투명화 및 정산 가이드 제공</strong>
+ </div>
+ </div>
+ </aside>
+ </div>
+ </section>
 
-        <!-- Feature 1: Contact -->
-        <section id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">2. 연락 창구 통일성의 중요성</h2>
-            <article class="card">
-                <div class="card-header">
-                    <span class="card-title">Why Single Contact?</span>
-                </div>
-                <p>
-                    클럽 예약 시 가장 큰 번거로움은 "누구에게 연락해야 하는가"를 찾기 어렵다는 점입니다. 가양 클럽의 경우, 매장 내부 직원이 아닌 전용 매니저나 예약 데스크를 통해 연락하는 것이 표준 프로세스입니다. 여러 개의 번호를 나열하기보다는 **한 곳으로 집중**할 수 있는 창구가 존재하는지 확인해야 합니다.
-                </p>
-                <ul class="check-list">
-                    <li><strong>통일된 채널 유지:</strong> 예약, 변경 요청, 문의가 모두 동일한 매니저에게 전달되어야 혼란이 줄어듭니다.</li>
-                    <li><strong>반응 속도:</strong> 24시간 내 답변 가능한 직전 근무자가 담당하는지 확인해야 합니다.</li>
-                </ul>
-            </article>
+ <!-- Feature 1: Contact -->
+ <section id="contact" aria-labelledby="contact-heading">
+ <h2 id="contact-heading">2. 연락 창구 통일성의 중요성</h2>
+ <article class="card">
+ <div class="card-header">
+ <span class="card-title">Why Single Contact?</span>
+ </div>
+ <p>
+ 클럽 예약 시 가장 큰 번거로움은 "누구에게 연락해야 하는가"를 찾기 어렵다는 점입니다. 가양 클럽의 경우, 매장 내부 직원이 아닌 전용 매니저나 예약 데스크를 통해 연락하는 것이 표준 프로세스입니다. 여러 개의 번호를 나열하기보다는 **한 곳으로 집중**할 수 있는 창구가 존재하는지 확인해야 합니다.
+ </p>
+ <ul class="check-list">
+ <li><strong>통일된 채널 유지:</strong> 예약, 변경 요청, 문의가 모두 동일한 매니저에게 전달되어야 혼란이 줄어듭니다.</li>
+ <li><strong>반응 속도:</strong> 24시간 내 답변 가능한 직전 근무자가 담당하는지 확인해야 합니다.</li>
+ </ul>
+ </article>
 
-            <div style="display: flex; gap: 32px; margin-top: 48px;">
-                <div style="flex: 1; background: #fff; border: 2px solid var(--color-accent); padding: 32px; border-radius: 4px;">
-                    <h4 style="font-family: 'Playfair Display'; margin-bottom: 16px;">예약 확정 절차</h4>
-                    <p style="margin-bottom: 8px;">1. 예약 요청 시 날짜와 인원, 목적을 명확히 밝힙니다.</p>
-                    <p style="margin-bottom: 8px;">2. 매니저가 "예약 완료"임을 문자나 카톡으로 즉시 확인합니다.</p>
-                    <p>3. 결제 금액과 입금 계좌를 사전에 공유받습니다.</p>
-                </div>
-                <div style="flex: 1; background: #fff; border: 2px solid var(--color-accent); padding: 32px; border-radius: 4px;">
-                    <h4 style="font-family: 'Playfair Display'; margin-bottom: 16px;">상대방 확인</h4>
-                    <p style="margin-bottom: 8px;"><strong>가양 클럽 룩북</strong> 페이지는 전문 예약 채널 정보를 제공합니다.</p>
-                    <p style="margin-bottom: 8px;">단순 홍보용 카카오톡 채널이 아닌, 실제 운영을 담당하는 매니저와 직접 연결되는지 테스트해 보세요.</p>
-                </div>
-            </div>
-        </section>
+ <div style="display: flex; gap: 32px; margin-top: 48px;">
+ <div style="flex: 1; background: #fff; border: 2px solid var(--color-accent); padding: 32px; border-radius: 4px;">
+ <h4 style="font-family: 'Playfair Display'; margin-bottom: 16px;">예약 확정 절차</h4>
+ <p style="margin-bottom: 8px;">1. 예약 요청 시 날짜와 인원, 목적을 명확히 밝힙니다.</p>
+ <p style="margin-bottom: 8px;">2. 매니저가 "예약 완료"임을 문자나 카톡으로 즉시 확인합니다.</p>
+ <p>3. 결제 금액과 입금 계좌를 사전에 공유받습니다.</p>
+ </div>
+ <div style="flex: 1; background: #fff; border: 2px solid var(--color-accent); padding: 32px; border-radius: 4px;">
+ <h4 style="font-family: 'Playfair Display'; margin-bottom: 16px;">상대방 확인</h4>
+ <p style="margin-bottom: 8px;"><strong>가양 클럽 룩북</strong> 페이지는 전문 예약 채널 정보를 제공합니다.</p>
+ <p style="margin-bottom: 8px;">단순 홍보용 카카오톡 채널이 아닌, 실제 운영을 담당하는 매니저와 직접 연결되는지 테스트해 보세요.</p>
+ </div>
+ </div>
+ </section>
 
-        <!-- Feature 2: Capacity -->
-        <section id="capacity" aria-labelledby="capacity-heading">
-            <h2 id="capacity-heading">3. 인원 변동에 대비하는 방법</h2>
-            <article class="card">
-                <p>
-                    클럽 방문은 일정이 확정된 것이더라도, 참석 인원이 갑자기 줄어들거나 늘어날 수 있는 변수가 존재합니다. 전문적인 예약 시스템에서는 이를 "Waitlist"나 "Backup Plan"을 통해 관리합니다. 가양 클럽의 경우, 예약 확정 시 **최소 인원 (Minimum Pax)**과 **최대 수용 인원**을 명확히 공지하는 것이 중요합니다.
-                </p>
-                <p>
-                    또한, 당일 참석 인원이 줄어들었을 때 별도의 정산 수수료나 패널티가 적용되는지 확인해야 합니다. 대부분의 클럽은 24시간 전까지 변동이 가능하나, 당일 변경 시에는 대기 인원 (Waitlist) 을 먼저 확보하는 것이 안전합니다.
-                </p>
-            </article>
+ <!-- Feature 2: Capacity -->
+ <section id="capacity" aria-labelledby="capacity-heading">
+ <h2 id="capacity-heading">3. 인원 변동에 대비하는 방법</h2>
+ <article class="card">
+ <p>
+ 클럽 방문은 일정이 확정된 것이더라도, 참석 인원이 갑자기 줄어들거나 늘어날 수 있는 변수가 존재합니다. 전문적인 예약 시스템에서는 이를 "Waitlist"나 "Backup Plan"을 통해 관리합니다. 가양 클럽의 경우, 예약 확정 시 **최소 인원 (Minimum Pax)**과 **최대 수용 인원**을 명확히 공지하는 것이 중요합니다.
+ </p>
+ <p>
+ 또한, 당일 참석 인원이 줄어들었을 때 별도의 정산 수수료나 패널티가 적용되는지 확인해야 합니다. 대부분의 클럽은 24시간 전까지 변동이 가능하나, 당일 변경 시에는 대기 인원 (Waitlist) 을 먼저 확보하는 것이 안전합니다.
+ </p>
+ </article>
 
-            <!-- Visual Break -->
-            <div style="margin: 64px 0; position: relative;">
-                <img src="https://placehold.co/800x300/e5e1df/2d261e?text=Capacity+Management+Chart" alt="graphic_element_01" class="graphic-element">
-            </div>
+ <!-- Visual Break -->
+ <div style="margin: 64px 0; position: relative;">
+ <img src="https://placehold.co/800x300/e5e1df/2d261e?text=Capacity+Management+Chart" alt="graphic_element_01" class="graphic-element">
+ </div>
 
-            <article class="card">
-                <h3>체크리스트: 인원 변동 대응</h3>
-                <ul class="check-list">
-                    <li><strong>Waitlist 확보:</strong> 당일 인원이 줄어든다면 대기 목록에 이름을 미리 넣어두세요.</li>
-                    <li><strong>Backup Plan:</strong> 주요 참석자가 빠질 경우, 대용 인원 확보가 가능한지 문의하세요.</li>
-                    <li><strong>최소 소모 비용 (Minimum Spend):</strong> 인원이 줄어든 후에도 고정된 최소 비용이 있는지 확인하세요.</li>
-                </ul>
-            </article>
-        </section>
+ <article class="card">
+ <h3>체크리스트: 인원 변동 대응</h3>
+ <ul class="check-list">
+ <li><strong>Waitlist 확보:</strong> 당일 인원이 줄어든다면 대기 목록에 이름을 미리 넣어두세요.</li>
+ <li><strong>Backup Plan:</strong> 주요 참석자가 빠질 경우, 대용 인원 확보가 가능한지 문의하세요.</li>
+ <li><strong>최소 소모 비용 (Minimum Spend):</strong> 인원이 줄어든 후에도 고정된 최소 비용이 있는지 확인하세요.</li>
+ </ul>
+ </article>
+ </section>
 
-        <!-- Feature 3: Closing -->
-        <section id="closing" aria-labelledby="closing-heading">
-            <h2 id="closing-heading">4. 마무리 및 정산 조건</h2>
-            <div class="layout-grid">
-                <article>
-                    <p>
-                        방문이 끝난 후의 정산 과정도 중요한 프로세스입니다. 가양 클럽과 같은 지역은 여러 업체가 밀집해 있어, 결제 단가나 추가 비용 (음료, 팁 등) 에 대한 명확한 규정이 필요합니다. 본 가이드는 **예약 전**에 미리 정할 수 있는 조건을 안내합니다.
-                    </p>
-                    <p>
-                        특히 "출석 후 잔금"이 적용되는지, 또는 "선입금"이 필요한지를 확인해야 합니다. 정확한 금액과 입금 계좌를 사전에 공유받는 것이 최종 비용에 대한 분쟁을 방지합니다. 또한, 방문 당일의 분위기나 서비스에 만족할 경우 추가적인 팁 (Tip) 을 제공하는 문화가 있는지 여부에 대해서도 미리 알고 있으면 좋습니다.
-                    </p>
-                </article>
+ <!-- Feature 3: Closing -->
+ <section id="closing" aria-labelledby="closing-heading">
+ <h2 id="closing-heading">4. 마무리 및 정산 조건</h2>
+ <div class="layout-grid">
+ <article>
+ <p>
+ 방문이 끝난 후의 정산 과정도 중요한 프로세스입니다. 가양 클럽과 같은 지역은 여러 업체가 밀집해 있어, 결제 단가나 추가 비용 (음료, 팁 등) 에 대한 명확한 규정이 필요합니다. 본 가이드는 **예약 전**에 미리 정할 수 있는 조건을 안내합니다.
+ </p>
+ <p>
+ 특히 "출석 후 잔금"이 적용되는지, 또는 "선입금"이 필요한지를 확인해야 합니다. 정확한 금액과 입금 계좌를 사전에 공유받는 것이 최종 비용에 대한 분쟁을 방지합니다. 또한, 방문 당일의 분위기나 서비스에 만족할 경우 추가적인 팁 (Tip) 을 제공하는 문화가 있는지 여부에 대해서도 미리 알고 있으면 좋습니다.
+ </p>
+ </article>
 
-                <aside style="background: var(--color-primary); color: #fff; padding: 32px; border-radius: 4px;">
-                    <span class="profile-label" style="color: var(--color-accent);">정산 가이드</span>
-                    <h3 style="color: #fff; margin-top: 0;">준비 담당자 필수 확인 사항</h3>
-                    <div style="display: grid; gap: 16px; margin-top: 24px;">
-                        <div style="border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 8px;">
-                            <strong style="color: var(--color-accent);">결제 방법</strong><br>
-                            <span style="font-size: 0.9rem; opacity: 0.8;">계좌 송금 또는 카드 결제 가능 여부 확인</span>
-                        </div>
-                        <div style="border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 8px;">
-                            <strong style="color: var(--color-accent);">추가 비용</strong><br>
-                            <span style="font-size: 0.9rem; opacity: 0.8;">음료 및 팁 포함 여부 확인</span>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-        </section>
+ <aside style="background: var(--color-primary); color: #fff; padding: 32px; border-radius: 4px;">
+ <span class="profile-label" style="color: var(--color-accent);">정산 가이드</span>
+ <h3 style="color: #fff; margin-top: 0;">준비 담당자 필수 확인 사항</h3>
+ <div style="display: grid; gap: 16px; margin-top: 24px;">
+ <div style="border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 8px;">
+ <strong style="color: var(--color-accent);">결제 방법</strong><br>
+ <span style="font-size: 0.9rem; opacity: 0.8;">계좌 송금 또는 카드 결제 가능 여부 확인</span>
+ </div>
+ <div style="border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 8px;">
+ <strong style="color: var(--color-accent);">추가 비용</strong><br>
+ <span style="font-size: 0.9rem; opacity: 0.8;">음료 및 팁 포함 여부 확인</span>
+ </div>
+ </div>
+ </aside>
+ </div>
+ </section>
 
-        <!-- FAQ Section -->
-        <section id="faq" aria-labelledby="faq-heading">
-            <h2 id="faq-heading">자주 묻는 질문 (FAQ)</h2>
-            <article class="card">
-                <div class="faq-item">
-                    <h3 class="faq-question">가양 클럽에서 예약을 어떻게 해야 하나요?</h3>
-                    <p class="faq-answer">
-                        가양 클럽은 전용 예약 채널로 연락이 가장 빠르고 확실합니다. 단순 문자나 카카오톡보다는 매니저 전용 메신저나 전화로 연락하는 것이 프로세스상 더 효율적입니다.
-                    </p>
-                </div>
+ <!-- FAQ Section -->
+ <section id="faq" aria-labelledby="faq-heading">
+ <h2 id="faq-heading">자주 묻는 질문 (FAQ)</h2>
+ <article class="card">
+ <div class="faq-item">
+ <h3 class="faq-question">가양 클럽에서 예약을 어떻게 해야 하나요?</h3>
+ <p class="faq-answer">
+ 가양 클럽은 전용 예약 채널로 연락이 가장 빠르고 확실합니다. 단순 문자나 카카오톡보다는 매니저 전용 메신저나 전화로 연락하는 것이 프로세스상 더 효율적입니다.
+ </p>
+ </div>
 
-                <div class="faq-item">
-                    <h3 class="faq-question">인원이 갑자기 줄어들거나 늘어날 때 어떻게 처리하나요?</h3>
-                    <p class="faq-answer">
-                        대부분의 클럽은 24시간 전까지 인원 변동이 가능합니다. 예약 확정 시 'Waitlist'를 미리 확보하는 것이 안전하며, 당일 변동 시에도 즉시 연락 가능한 창구가 필수적입니다.
-                    </p>
-                </div>
+ <div class="faq-item">
+ <h3 class="faq-question">인원이 갑자기 줄어들거나 늘어날 때 어떻게 처리하나요?</h3>
+ <p class="faq-answer">
+ 대부분의 클럽은 24시간 전까지 인원 변동이 가능합니다. 예약 확정 시 'Waitlist'를 미리 확보하는 것이 안전하며, 당일 변동 시에도 즉시 연락 가능한 창구가 필수적입니다.
+ </p>
+ </div>
 
-                <div class="faq-item">
-                    <h3 class="faq-question">정산 및 결제 조건은 어떻게 되나요?</h3>
-                    <p class="faq-answer">
-                        가양 클럽의 정산 방식은 방문 전 약 30~50% 선입금과 출석 후 잔금으로 나뉩니다. 정확한 금액과 입금 계좌를 확인하는 것이 최종 비용에 대한 분쟁을 방지합니다.
-                    </p>
-                </div>
+ <div class="faq-item">
+ <h3 class="faq-question">정산 및 결제 조건은 어떻게 되나요?</h3>
+ <p class="faq-answer">
+ 가양 클럽의 정산 방식은 방문 전 약 30~50% 선입금과 출석 후 잔금으로 나뉩니다. 정확한 금액과 입금 계좌를 확인하는 것이 최종 비용에 대한 분쟁을 방지합니다.
+ </p>
+ </div>
 
-                <div class="faq-item">
-                    <h3 class="faq-question">가양 클럽 방문 시 주의해야 할 점은 무엇인가요?</h3>
-                    <p class="faq-answer">
-                        위치가 밀집해 있어 이동 시간을 미리 계산하는 것이 중요합니다. 또한, 최소 인원 (Minimum Pax) 과 최대 수용 인원을 명확히 공지하여 예약을 확정하세요.
-                    </p>
-                </div>
-            </article>
-        </section>
+ <div class="faq-item">
+ <h3 class="faq-question">가양 클럽 방문 시 주의해야 할 점은 무엇인가요?</h3>
+ <p class="faq-answer">
+ 위치가 밀집해 있어 이동 시간을 미리 계산하는 것이 중요합니다. 또한, 최소 인원 (Minimum Pax) 과 최대 수용 인원을 명확히 공지하여 예약을 확정하세요.
+ </p>
+ </div>
+ </article>
+ </section>
 
-    </main>
+ </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <h3 style="margin-top: 0; color: #fff;">About Author</h3>
-                <p style="color: #ccc; font-size: 0.95rem;">
-                    로컬 가이드 김현수<br>
-                    "가양 지역 정보를 5년간 정리해온 전문 큐레이터"입니다. 단순한 방문 안내를 넘어, 예약부터 정산까지의 전 과정을 관리하는 실무적 관점에서 콘텐츠를 작성합니다.
-                </p>
-            </div>
-            <div style="text-align: right;">
-                <h3 style="margin-top: 0; color: #fff;">Quick Links</h3>
-                <ul style="list-style: none; padding: 0; margin-top: 16px;">
-                    <li style="margin-bottom: 8px;"><a href="#intro" style="color: #ccc; text-decoration: none;">홈</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#contact" style="color: #ccc; text-decoration: none;">연락 창구</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#faq" style="color: #ccc; text-decoration: none;">자주 묻는 질문</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright">
-            &copy; 2023 가양 클럽 룩북. All rights reserved.<br>
-            Designed by Black Book Concierge.
-        </div>
+ <!-- Footer -->
+ <footer>
+ <div class="footer-grid">
+ <div>
+ <h3 style="margin-top: 0; color: #fff;">About Author</h3>
+ <p style="color: #ccc; font-size: 0.95rem;">
+ 로컬 가이드 김현수<br>
+ "가양 지역 정보를 5년간 정리해온 전문 큐레이터"입니다. 단순한 방문 안내를 넘어, 예약부터 정산까지의 전 과정을 관리하는 실무적 관점에서 콘텐츠를 작성합니다.
+ </p>
+ </div>
+ <div style="text-align: right;">
+ <h3 style="margin-top: 0; color: #fff;">Quick Links</h3>
+ <ul style="list-style: none; padding: 0; margin-top: 16px;">
+ <li style="margin-bottom: 8px;"><a href="#intro" style="color: #ccc; text-decoration: none;">홈</a></li>
+ <li style="margin-bottom: 8px;"><a href="#contact" style="color: #ccc; text-decoration: none;">연락 창구</a></li>
+ <li style="margin-bottom: 8px;"><a href="#faq" style="color: #ccc; text-decoration: none;">자주 묻는 질문</a></li>
+ </ul>
+ </div>
+ </div>
+ <div class="copyright">
+ &copy; 2023 가양 클럽 룩북. All rights reserved.<br>
+ Designed by Black Book Concierge.
+ </div>
 
-        <!-- DOM Noise: Cache Marker -->
-        <div class="cache-marker" style="background-color: #ff5722;">cache_id:a1b2c3d4e5f6</div>
-    </footer>
+ <!-- DOM Noise: Cache Marker -->
+ <div class="cache-marker" style="background-color: #ff5722;">cache_id:a1b2c3d4e5f6</div>
+ </footer>
 
 </body>
 </html>
